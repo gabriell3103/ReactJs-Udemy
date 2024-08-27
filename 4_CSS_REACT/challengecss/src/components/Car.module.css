@@ -1,0 +1,11 @@
+.car_details {
+    color: white;
+}
+
+.bloco {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(99, 94, 94);
+    margin-top: 50px;
+}
