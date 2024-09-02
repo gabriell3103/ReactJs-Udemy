@@ -19,6 +19,11 @@
       "id": "bd98",
       "name": "arroz",
       "price": "12"
+    },
+    {
+      "id": "ea0e",
+      "name": "camisa",
+      "price": "50"
     }
   ]
 }
