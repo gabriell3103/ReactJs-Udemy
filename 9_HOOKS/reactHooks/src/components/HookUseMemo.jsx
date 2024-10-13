@@ -1,23 +1,25 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 
 const HookUseMemo = () => {
   const [number, setNumber] = useState(0);
 
-  //   const premiumNumbers = ['0', '100', '200'];
+  //   gera o erro
+  // const premiumNumbers = ["0", "100", "200"];
 
+  // resolvendo com o memo
   const premiumNumbers = useMemo(() => {
-    ['0', '100', '200'];
+    return ['0', '100', '200'];
   }, []);
 
   useEffect(() => {
-    console.log('premiumNumbers alterado');
+    console.log('Premium numbers foi alterado!');
   }, [premiumNumbers]);
 
   return (
     <div>
-      <h2>UseMemo</h2>
+      <h2>useMemo</h2>
       <input type="text" onChange={e => setNumber(e.target.value)} />
-      {premiumNumbers.includes(number) ? <p>Acertou o número</p> : ''}
+      {premiumNumbers.includes(number) ? <p>Acertou o número!</p> : ''}
       <hr />
     </div>
   );
